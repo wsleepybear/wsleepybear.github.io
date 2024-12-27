@@ -1,3 +1,10 @@
+---
+title: MySQL同步至ElasticSearch?
+categories: [运维]
+tags: [MySQL,ElasticSearch]
+date: 2024-12-27
+media_subpath: '/posts/2024/12/27'
+---
 
 ## 1. 使用 Docker Compose 启动 Elasticsearch 和 Kibana
 
