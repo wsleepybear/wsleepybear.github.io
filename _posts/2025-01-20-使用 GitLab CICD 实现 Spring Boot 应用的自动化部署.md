@@ -5,7 +5,7 @@ tags: [SpringBoot,GitLab]
 date: 2025-01-20
 media_subpath: '/posts/2025/01/20'
 ---
-## 1. **配置GitLab Runner： **
+## 1. 配置GitLab Runner： 
 
 #### GitLab Runner 介绍
 
@@ -15,9 +15,9 @@ media_subpath: '/posts/2025/01/20'
 
 **GitLab Runner** 可以运行在多种环境中，如本地机器、虚拟机、物理服务器、以及 **Docker 容器** 中，执行任务并将结果反馈给 GitLab 系统。
 
-### 2.安装和配置 GitLab Runner
+#### 2.安装和配置 GitLab Runner
 
-### 1. **在本地或服务器上安装 GitLab Runner**
+#### 1. **在本地或服务器上安装 GitLab Runner**
 
 **安装 GitLab Runner** 的步骤根据操作系统有所不同。以下是 **Linux** 系统上的安装步骤。
 
@@ -65,7 +65,7 @@ sudo gitlab-runner status
 
 在没有外部网络连接的环境中，你可以通过以下步骤进行离线安装。离线安装的关键是下载 GitLab Runner 安装包及其依赖包，然后手动将这些文件传输到目标服务器。
 
-### **离线安装步骤**
+#### **离线安装步骤**
 
 1. **在有网络的机器上下载 GitLab Runner 安装包：**
    
@@ -101,7 +101,7 @@ sudo gitlab-runner status
    
    修改gitlab-runner的配置文件
 
-### 为什么 GitLab 推荐将 Runner 安装在本机，而不是 Docker 环境中？
+#### 为什么 GitLab 推荐将 Runner 安装在本机，而不是 Docker 环境中？
 
 尽管 **Docker 环境** 提供了高度的隔离性和可移植性，但 **GitLab** 更推荐将 **GitLab Runner** 安装在本机而非 Docker 环境中的原因包括：
 
@@ -235,7 +235,7 @@ sudo gitlab-runner status
 - **部署阶段：**  
 配置部署到测试环境或生产环境的步骤。比如，使用 Docker 部署、远程服务器部署等。
 
-### 3. GitLab CI 配置 (`.gitlab-ci.yml`)
+## 3. GitLab CI 配置 (`.gitlab-ci.yml`)
 
 我们在 `gitlab-ci.yml` 文件中定义了构建、打包、部署等步骤。使用 Maven Docker 镜像来构建 JAR 包，并指定 Maven 仓库路径来避免每次构建时下载依赖。
 
